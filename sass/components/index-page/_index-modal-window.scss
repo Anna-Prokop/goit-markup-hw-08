@@ -1,0 +1,207 @@
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  min-height: 581px;
+  background-color: $white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  animation-name: ModalWindowAnimation;
+  animation-duration: 2000ms;
+  transform-origin: top left;
+
+  &__close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    fill: #000000;
+    display: flex;
+  }
+
+  &__button-icon {
+    display: flex;
+    align-items: center;
+    height: 18px;
+    width: 18px;
+    margin: auto;
+  }
+
+  &__title {
+    font-family: $mainFont;
+    font-weight: $bold;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $darkGrey;
+    margin-bottom: 12px;
+    margin-top: 40px;
+  }
+}
+
+@keyframes ModalWindowAnimation {
+  0% {
+    transform: scale(0.2) rotate(360deg);
+  }
+
+  50% {
+    transform: scale(0.5) rotate(720deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.modal-form {
+  margin-left: 40px;
+  margin-right: 40px;
+
+  &__label-style {
+    font-family: $mainFont;
+    font-weight: $normal;
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.01em;
+    color: $secondaryColor;
+    margin-bottom: 4px;
+  }
+
+  &__input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__form-container {
+    position: relative;
+  }
+
+  &__form-container:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &__input-icon {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 11px;
+    left: 12px;
+  }
+
+  &__textarea {
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding-top: 12px;
+    padding-left: 16px;
+  }
+
+  &__input:focus,
+  &__textarea:focus {
+    border: 1px solid #2196f3;
+    outline: none;
+  }
+
+  &__textarea::placeholder {
+    position: absolute;
+    color: rgba(117, 117, 117, 0.5);
+    font-family: $mainFont;
+    font-weight: $normal;
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.01em;
+    top: 12px;
+    left: 16px;
+  }
+
+  &__statute-container {
+    margin-bottom: 30px;
+  }
+
+  &__statute-style {
+    font-family: $mainFont;
+    font-weight: $normal;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: $secondaryColor;
+  }
+
+  &--statute-link-decoration {
+    color: $mainBlue;
+  }
+
+  &__statute-style::before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1px solid #212121;
+    margin-right: 7px;
+  }
+
+  &__button-container {
+    display: flex;
+  }
+
+  &__form-button {
+    height: 50px;
+    width: 200px;
+    background-color: var(--main-color);
+    color: $white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: $mainFont;
+    font-weight: $bold;
+    font-size: 16px;
+    line-height: 1.875;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border: none;
+    margin: 0 auto;
+  }
+
+  &__input:focus + &__input-icon {
+    fill: $mainBlue;
+  }
+
+  &__input-statute:checked + &__statute-style::before {
+    background-color: $mainBlue;
+    border: none;
+    background-image: url(../images/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}

@@ -1,0 +1,210 @@
+.contact--bgc {
+  background-color: $mediumGrey;
+}
+
+.contact-logo {
+  &__link {
+    font-family: $secondaryFont;
+    font-style: normal;
+    font-weight: $bold;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: $white;
+    text-decoration: none;
+  }
+
+  &--padding {
+    margin-top: 58px;
+    margin-bottom: 20px;
+  }
+}
+
+.address-container {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: $normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  padding-bottom: 75px;
+}
+.address {
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  &__street {
+    color: $white;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__mail,
+  &__phone {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__street:hover,
+  &__street:focus,
+  &__mail:hover,
+  &__mail:focus,
+  &__phone:hover,
+  &__phone:focus {
+    color: $mainBlue;
+  }
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+}
+
+.flex-container-right {
+  width: 206px;
+  margin-left: 70px;
+  margin-top: 72px;
+  margin-bottom: 100px;
+}
+
+.footer-social-media__title {
+  font-family: $mainFont;
+  color: $white;
+  font-weight: $bold;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.footer-social-media-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__item {
+    border-radius: 50%;
+  }
+
+  &__link {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    fill: #ffffff;
+    width: 44px;
+    height: 44px;
+    transition-property: fill, background-color, cursor;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link:hover,
+  &__link:focus,
+  &__icon:hover,
+  &__icon:focus {
+    fill: #ffffff;
+    background-color: $mainBlue;
+    cursor: pointer;
+  }
+
+  &__icon {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    transition-property: fill, background-color, cursor;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.form-newsletter {
+  display: inline-block;
+  width: 570px;
+  height: 86px;
+  margin-left: 78px;
+  margin-top: 72px;
+  margin-bottom: 94px;
+
+  &__label-sign-up {
+    display: inline-block;
+    width: 207px;
+    margin: 0 auto;
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: $bold;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    color: $white;
+  }
+
+  &__input {
+    width: 385px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    margin-top: 20px;
+    height: 50px;
+    margin-right: 12px;
+    display: inline-block;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 16px;
+    color: $white;
+  }
+
+  &__input:focus {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+  }
+
+  &__button {
+    height: 50px;
+    width: 200px;
+    background-color: $mainBlue;
+    border: none;
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+
+  &__button-title {
+    position: absolute;
+    top: 10px;
+    left: 42px;
+    color: $white;
+    font-family: $mainFont;
+    font-weight: $bold;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+  }
+
+  &__button-icon {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+    bottom: 13px;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__input::placeholder {
+    position: absolute;
+    font-family: $mainFont;
+    font-weight: $normal;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    left: 16px;
+    top: 15px;
+  }
+}
+
+.form-container-flex {
+  display: flex;
+}
