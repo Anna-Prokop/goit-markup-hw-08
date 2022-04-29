@@ -32,13 +32,38 @@ p {
 img {
   display: block;
 }
+
 .container {
-  width: 1200px;
+  min-width: 480px;
+  padding: 0 15px;
+  margin: 0 auto;
   align-items: center;
+  margin: 0 auto;
+}
+
+.section {
+  padding-bottom:60px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
+}
+
+@media screen and (min-width:1200px){
+.container {
+ width: 1200px;
+ align-items: center;
   margin: 0 auto;
 }
 
 .section {
   padding-bottom: 94px;
   padding-top: 94px;
+
 }
+
+}
+
