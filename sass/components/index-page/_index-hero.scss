@@ -1,9 +1,97 @@
+
 .section-hero {
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/img_section_hero.jpg);
+    url(/images/Sectionhero/section_hero_mobile.jpg);
+  background-repeat: no-repeat;
+  height: 400px;
+  margin: auto;
+  background-size: 480px 400px;
+
+
+  &__title {
+    font-family: $mainFont;
+    font-weight: $ultraBold;
+    font-size: 26px;
+    line-height: 1.615;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $white;
+    padding-top: 118px;
+    padding-bottom: 30px;
+    padding-left: auto;
+    padding-right: auto;
+    width: 365px;
+    margin: auto;
+  }
+
+  &__module-btn {
+    font-family: $mainFont;
+    font-weight: $bold;
+    font-size: 16px;
+    line-height: 30px;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $white;
+    background: $mainBlue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 41px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width:320px) and (max-width:767px),
+  screen and (min-resolution: 192dpi) and (min-width:320px) and (max-width:767px),
+  screen and (min-resolution: 2dppx) and (min-width:320px) and (max-width:767px) {
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/images/Sectionhero/section_hero_mobile@2x.jpg);
+  }
+  }
+/*=====TABLET=====*/
+
+@media screen and (min-width: 768px) {
+
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/Sectionhero/section_hero_tablet.jpg);
+    background-repeat: no-repeat;
+    height: 400px;
+    margin: auto;
+    background-size: 768px 400px;
+  
+  }
+  
+  @media screen and (min-device-pixel-ratio: 2) and (min-width:768px),
+    screen and (min-resolution: 192dpi) and (min-width:768px),
+    screen and (min-resolution: 2dppx) and (min-width:768px) {
+    .section-hero {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(/images/Sectionhero/section_hero_tablet@2x.jpg);
+    }
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+.section-hero {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('/images/Sectionhero/section_hero_desktop.jpg');
   background-repeat: no-repeat;
   height: 600px;
   margin: auto;
@@ -44,4 +132,6 @@
     padding: 10px 41px;
     margin: auto;
   }
+}
+
 }

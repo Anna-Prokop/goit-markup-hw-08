@@ -1,4 +1,101 @@
 .lorem-ipsum-container {
+  min-width:320px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lorem-ipsum {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+ 
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    width: 450px;
+  }
+
+  &__container-icon {
+    display: flex;
+    width: 450px;
+    height: 120px;
+    background-color: $darkWhite;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: $mainFont;
+    font-weight: $bold;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $darkGrey;
+    padding-bottom: 10px;
+  }
+
+  &__text {
+    font-family: $mainFont;
+    font-weight: $normal;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: $secondaryColor;
+  } 
+}
+
+
+
+/*===TABLET===*/
+@media screen and (min-width:768px) {
+.lorem-ipsum-container {
+  min-width:738px;
+}
+.lorem-ipsum{
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+
+.lorem-ipsum__item {
+  width:354px;
+}
+.lorem-ipsum__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.lorem-ipsum__container-icon {
+  display: flex;
+  width: 354px;
+  height: 120px;
+  background-color: $darkWhite;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+}
+
+/*===DESKTOP===*/
+
+@media screen and (min-width: 1200px) {
+
+.lorem-ipsum-container {
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -53,4 +150,5 @@
     letter-spacing: 0.03em;
     color: $secondaryColor;
   }
+}
 }

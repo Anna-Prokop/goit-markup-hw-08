@@ -296,6 +296,13 @@
           <h2 class="section-our-team__title">Nasz zespół</h2>
           <ul class="our-team">
             <li class="our-team__item">
+             
+              <picture>
+
+              <source media="(min-width: 1200px)" srcset= "images/Ourteam/product_designer_mobile.jpg 1x, images/Ourteam/product_designer_mobile@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="images/Ourteam/product_designer_tablet.jpg 1x, images/Ourteam/product_designer_tablet@2x.jpg 2x">
+              <source media="(min-width: 320px)" srcset="images/Ourteam/product_designer_desktop.jpg 1x, images/Ourteam/product_designer_desktop@2x.jpg 2x"> 
+
               <img
                 class="our-team__photo"
                 src="images/Ourteam/our_team_img1.jpg"
@@ -303,6 +310,7 @@
                 width="810"
                 height="780"
               />
+              </picture>
 
               <h3 class="our-team__name">John Doe</h3>
               <p class="our-team__role">Product Designer</p>
@@ -343,6 +351,14 @@
 
 
             <li class="our-team__item">
+
+              <picture>
+
+              <source media="(min-width: 1200px)" srcset= "images/Ourteam/frontend_developer_mobile.jpg 1x, images/Ourteam/frontend_developer_mobile@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="images/Ourteam/frontend_developer_tablet.jpg 1x, images/Ourteam/frontend_developer_tablet@2x.jpg 2x">
+              <source media="(min-width: 320px)" srcset="images/Ourteam/frontend_developer_desktop.jpg 1x, images/Ourteam/frontend_developer_desktop@2x.jpg 2x"> 
+
+              
               <img
                 class="our-team__photo"
                 src="images/Ourteam/our_team_img2.jpg"
@@ -350,7 +366,7 @@
                 width="810"
                 height="780"
               />
-
+            </picture>
               <h3 class="our-team__name">John Doe</h3>
               <p class="our-team__role">Frontend Developer</p>
               <div class="our-team__social-media-container">
@@ -389,6 +405,10 @@
             </li>
 
             <li class="our-team__item">
+              <picture>
+              <source media="(min-width: 1200px)" srcset= "images/Ourteam/marketing_mobile.jpg 1x, images/Ourteam/marketing_mobile@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="images/Ourteam/marketing_tablet.jpg 1x, images/Ourteam/marketing_tablet@2x.jpg 2x">
+              <source media="(min-width: 320px)" srcset="images/Ourteam/marketing_desktop.jpg 1x, images/Ourteam/marketing_desktop@2x.jpg 2x"> 
               <img
                 class="our-team__photo"
                 src="images/Ourteam/our_team_img3.jpg"
@@ -396,6 +416,7 @@
                 width="810"
                 height="780"
               />
+              </picture>
               <h3 class="our-team__name">John Doe</h3>
               <p class="our-team__role">Marketing</p>
               <div class="our-team__social-media-container">
@@ -433,6 +454,10 @@
             </li>
 
             <li class="our-team__item">
+             <picture>
+              <source media="(min-width: 1200px)" srcset= "images/Ourteam/ui_designer_mobile.jpg 1x, images/Ourteam/ui_designer_mobile@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="images/Ourteam/ui_designer_tablet.jpg 1x, images/Ourteam/ui_designer_tablet@2x.jpg 2x">
+              <source media="(min-width: 320px)" srcset="images/Ourteam/ui_designer_desktop.jpg 1x, images/Ourteam/ui_designer_desktop@2x.jpg 2x"> 
               <img
                 class="our-team__photo"
                 src="images/Ourteam/our_team_img4.jpg"
@@ -440,6 +465,7 @@
                 width="810"
                 height="780"
               />
+              </picture>
               <h3 class="our-team__name">John Doe</h3>
               <p class="our-team__role">UI Designer</p>
               <div class="our-team__social-media-container">
@@ -482,7 +508,7 @@
       <!--section Our Clients-->
 
           <section class="section-our-clients section">
-        <div class="container">
+        <div class="container container-our-clients">
           <h2 class="section-our-clients__title">Nasi klienci</h2>
           <ul class="our-clients">
                   <li class="our-clients__item">
@@ -537,85 +563,87 @@
 <!--footer-->
     <footer class="contact contact--bgc">
       <div class="contact-container container footer-container">
-        <div class="flex-container">
-        <div class="contact-logo contact-logo--padding">
-          <a class="contact-logo__link" href="#"><span class="contact-logo--color">Web</span>Studio</a>
-        </div>
-        <address class="address-container">
-          <ul class="address">
-            <li class="address__item">
-              <a
-                class="address__street"
-                href="https://goo.gl/maps/j62CxN92Yu1Q2Km39"
-                target="_blank"
-                >m. Warszawa, Aleje Jerozolimskie 21</a
-              >
-            </li>
-            <li class="address__item">
-              <a class="address__mail" href="mailto:info@example.com"
-                >info@example.com</a
-              >
-            </li>
-            <li class="address__item">
-              <a class="address__phone" href="tel:+48111111111"
-                >+48 111 111 111</a
-              >
-            </li>
-          </ul>
-        </address>
-        </div>
-         <div class="flex-container-right footer-social-media">
+
+          <div class="flex-container">
+                <div class="contact-logo contact-logo--padding">
+                <a class="contact-logo__link" href="#"><span class="contact-logo--color">Web</span>Studio</a>
+                 </div>
+
+                 <address class="address-container">
+                  <ul class="address">
+                  <li class="address__item">
+                   <a
+                   class="address__street"
+                    href="https://goo.gl/maps/j62CxN92Yu1Q2Km39"
+                     target="_blank"
+                      >m. Warszawa, Aleje Jerozolimskie 21</a>
+                        
+                    </li>
+                    <li class="address__item">
+                    <a class="address__mail" href="mailto:info@example.com"
+                     >info@example.com</a>
+                
+                      </li>
+                       <li class="address__item">
+                            <a class="address__phone" href="tel:+48111111111">+48 111 111 111</a>
+                                   
+                      </li>
+                      </ul>
+                      </address>
+               </div>
+
+                <div class="flex-container-right footer-social-media">
           
         
-             <p class="footer-social-media__title">DOŁĄCZ DO NAS</p>
-                <ul class="footer-social-media-list">
-                  <li class="footer-social-media-list__item">
-                    <a href="#" class="footer-social-media-list__link">
-                      <svg class="footer-social-media-list__icon">
+                      <p class="footer-social-media__title">DOŁĄCZ DO NAS</p>
+                       <ul class="footer-social-media-list">
+                        <li class="footer-social-media-list__item">
+                        <a href="#" class="footer-social-media-list__link">
+                        <svg class="footer-social-media-list__icon">
                         <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="footer-social-media-list__item">
-                    <a href="#" class="footer-social-media-list__link">
-                      <svg class="footer-social-media-list__icon">
-                        <use href="./images/icons.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="footer-social-media-list__item">
-                    <a href="#" class="footer-social-media-list__link">
-                      <svg class="footer-social-media-list__icon">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="footer-social-media-list__item">
-                    <a href="#" class="footer-social-media-list__link">
-                      <svg class="footer-social-media-list__icon">
-                        <use href="./images/icons.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
+                          </svg>
+                          </a>
+                         </li>
+                        <li class="footer-social-media-list__item">
+                          <a href="#" class="footer-social-media-list__link">
+                          <svg class="footer-social-media-list__icon">
+                           <use href="./images/icons.svg#icon-twitter"></use>
+                          </svg>
+                           </a>
+                           </li>
+                              <li class="footer-social-media-list__item">
+                             <a href="#" class="footer-social-media-list__link">
+                             <svg class="footer-social-media-list__icon">
+                             <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                            </a>
+                            </li>
+                           <li class="footer-social-media-list__item">
+                            <a href="#" class="footer-social-media-list__link">
+                              <svg class="footer-social-media-list__icon">
+                              <use href="./images/icons.svg#icon-linkedin"></use>
+                             </svg>
+                             </a>
+                             </li>
+                            </ul>
               
-            </li>
-          </ul>
-        </div>
+          
+                           </div>
         
-        <div class="form-container">
-          <form class="form-newsletter">
-<label for="newsletter" class="form-newsletter__label-sign-up">ZAPISZ SIĘ DO NEWSLETTERA </label>
-<div class="form-container-flex">
-  <input class="form-newsletter__input" type="text" name="input-newsletter" id="newsletter" placeholder="E-mail"/>
-<button class="form-newsletter__button" type="submit">
-        <span class="form-newsletter__button-title">Zapisz się</span>
-        <svg class="form-newsletter__button-icon"> <use href="./images/icons.svg#icon-icon-send"></use>
-                      </svg>
-      </button>      
-</div>
-</form>
-</div>
+                          <div class="form-container">
+                                <form class="form-newsletter">
+                                  <label for="newsletter" class="form-newsletter__label-sign-up">ZAPISZ SIĘ DO NEWSLETTERA </label>
+                                    <div class="form-container-flex">
+                                    <input class="form-newsletter__input" type="text" name="input-newsletter" id="newsletter" placeholder="E-mail"/>
+                                    <button class="form-newsletter__button" type="submit">
+                                    <span class="form-newsletter__button-title">Zapisz się</span>
+                                     <svg class="form-newsletter__button-icon"> <use href="./images/icons.svg#icon-icon-send"></use>
+                                       </svg>
+                                      </button>      
+                                     </div>
+                              </form>
+                             </div>
+           </div>                  
     
     </footer>
 

@@ -1,3 +1,19 @@
+
+.section-about-us{
+  display: none;
+}
+@media screen and (min-width:768px) {
+.section-about-us{
+    display: none;
+}
+}
+
+@media screen and (min-width: 1200px) {
+
+.section-about-us{
+    display: flex;
+  }
+
 .section-about-us__title {
   font-family: $mainFont;
   font-weight: $bold;
@@ -42,4 +58,6 @@
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+}
+
 }

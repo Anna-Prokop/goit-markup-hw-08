@@ -1,3 +1,112 @@
+.container-our-clients {
+  min-width: 320px;
+}
+.section-our-clients__title {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: $bold;
+  font-size: 28px;
+  line-height: 1.179;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $darkGrey;
+  margin-bottom: 30px;
+}
+.our-clients {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-width: 480px;
+
+  &__item {
+    display: flex;
+    width: 210px;
+    height: 92px;
+    background-color: $white;
+    border: 1px solid $lightGrey;
+    align-items: center;
+    justify-content: center;
+    fill: $lightGrey;
+    transition-property: fill, border, cursor;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__icon {
+    display: flex;
+    width: 106px;
+    height: 60px;
+  }
+
+  &__item:hover,
+  &__item:focus {
+    fill: #2196f3;
+    border: 1px solid #2196f3;
+    cursor: pointer;
+  }
+}
+
+
+/*===TABLET===*/
+
+@media screen and (min-width: 768px){
+
+.container-our-clients {
+  min-width: 768px;
+}
+
+.our-clients {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-width: 738px;
+
+  &__item {
+    display: flex;
+    width: 226px;
+    height: 92px;
+    background-color: $white;
+    border: 1px solid $lightGrey;
+    align-items: center;
+    justify-content: center;
+    fill: $lightGrey;
+    transition-property: fill, border, cursor;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__icon {
+    display: flex;
+    width: 106px;
+    height: 60px;
+  }
+
+  &__item:hover,
+  &__item:focus {
+    fill: #2196f3;
+    border: 1px solid #2196f3;
+    cursor: pointer;
+  }
+}
+
+}
+
+
+/*====DESKTOP====*/
+
+
+@media screen and (min-width: 1200px){
+
 .section-our-clients__title {
   font-family: $mainFont;
   font-style: normal;
@@ -43,4 +152,5 @@
     border: 1px solid #2196f3;
     cursor: pointer;
   }
+}
 }
