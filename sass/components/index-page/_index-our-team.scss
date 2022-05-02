@@ -1,5 +1,6 @@
 .section-our-team {
   min-width: 320px;
+  max-width: 767px;
   &--bgc {
     background-color: $darkWhite;
   }
@@ -61,14 +62,16 @@
 
   &__social-media-container {
     width: 206px;
-    margin: 16px 32px 30px;
+    margin: 0 auto;
   }
 
-  &__social-media {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+
+
+   &__social-media {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
   &__social-media-item {
     border-radius: 50%;
@@ -209,7 +212,7 @@
 
 @media screen and (min-width: 1200px) {
   .section-our-team {
-    min-width: 1200px;
+ 
     &--bgc {
       background-color: $darkWhite;
     }

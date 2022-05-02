@@ -48,7 +48,7 @@ img {
 /*===MOBILE==*/
 @media screen and (min-width: 320px) {
   .container {
-    min-width: 320px;
+    max-width: 320px;
     padding: 0 15px;
     margin: 0 auto;
     align-items: center;
@@ -58,7 +58,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
-    min-width: 480px;
+    max-width: 480px;
     padding: 0 15px;
     margin: 0 auto;
     align-items: center;
@@ -69,14 +69,16 @@ img {
 /*==TABLET==*/
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    max-width: 768px;
+    padding: 0 15px;
   }
 }
 
 /*==DESKTOP==*/
 @media screen and (min-width: 1200px) {
   .container {
-    min-width: 1200px;
+    max-width: 1200px;
+    padding: 0 15px;
   }
 
   .section {
