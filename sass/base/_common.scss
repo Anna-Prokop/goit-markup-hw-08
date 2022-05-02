@@ -1,4 +1,3 @@
-
 body {
   font-family: "Roboto", "Raleway" sans-serif;
 }
@@ -34,7 +33,7 @@ img {
 }
 
 .container {
-  min-width: 320px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
   align-items: center;
@@ -42,28 +41,46 @@ img {
 }
 
 .section {
-  padding-bottom:60px;
+  padding-bottom: 60px;
   padding-top: 60px;
 }
 
+/*===MOBILE==*/
+@media screen and (min-width: 320px) {
+  .container {
+    min-width: 320px;
+    padding: 0 15px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    min-width: 480px;
+    padding: 0 15px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/*==TABLET==*/
 @media screen and (min-width: 768px) {
   .container {
     min-width: 768px;
   }
 }
 
-@media screen and (min-width:1200px){
-.container {
- width: 1200px;
- align-items: center;
-  margin: 0 auto;
+/*==DESKTOP==*/
+@media screen and (min-width: 1200px) {
+  .container {
+    min-width: 1200px;
+  }
+
+  .section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
-
-.section {
-  padding-bottom: 94px;
-  padding-top: 94px;
-
-}
-
-}
-

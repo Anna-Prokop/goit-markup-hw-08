@@ -1,0 +1,157 @@
+/*menu hamburger*/
+.hamburger {
+  position: relative;
+  padding:0;
+  border: none;
+  width: 40px;
+  height: 40px;
+  margin-left:180px;
+  
+
+&__icon {
+  background-color: $white;
+  padding: 0;
+  margin-left:180px;
+  position:absolute;
+  top:0;
+  right:0;
+
+ }
+}
+
+.hamburger:hover,
+.hamburer:focus {
+  fill:$mainBlue;
+}
+
+.hamburger-backdrop {
+  position:fixed;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+  z-index:99;
+}
+
+.hamburger-menu {
+  position:absolute;
+  top:0;
+  left:0;
+  transform:translate (-50%,-50%);
+  width:100vw;
+  height:796px;
+  background-color: $white;
+
+
+&__close-btn {
+margin-left:300px;
+width:40px;
+height:40px;
+background-color: transparent;
+border:none;
+cursor: pointer;
+}
+
+&__icon:hover,
+&__icon:focus {
+  fill:$mainBlue;
+}
+}
+ 
+
+.menu-mobile{
+margin-top: 48px;
+margin-left:40px;
+
+
+&__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+&__link {
+  font-weight:$medium;
+  font-family: $mainFont;
+  font-size: 40px;
+  line-height: 1.175;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: $darkGrey;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__link:hover,
+&__link:focus {
+  color: $mainBlue;
+}
+
+&__link--active {
+  color: $mainBlue;
+}
+}
+
+.address-mobile{
+  margin-top:302px;
+  margin-bottom:64px;
+  margin-left:40px;
+
+
+
+&__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+
+&__number-link {
+  font-family: $mainFont;
+  font-weight: $medium;
+  font-size: 34px;
+  line-height: 1.176;
+  letter-spacing: 0.02em;
+  color: $mainBlue;
+  text-decoration:none;
+}
+
+&__mail-link {
+  font-family: $mainFont;
+  font-weight: $medium;
+  font-size: 24px;
+  line-height: 1.167;
+  letter-spacing: 0.02em;
+  color:$secondaryColor;
+  text-decoration:none;
+}
+}
+
+.social-media-mobile {
+  margin-left:40px;
+
+
+
+&__list{
+  display: flex;
+ justify-content: center;
+
+}
+
+&__link {
+font-family: $mainFont;
+font-weight: $medium;
+font-size: 18px;
+line-height: 1.222;
+letter-spacing: 0.02em;
+color: $mainBlue;
+text-decoration: none;
+justify-content: center;
+margin:0 auto;
+padding: 10px 10px 10px 0;
+}
+
+&__item:not(:last-child){
+  margin-right: 20px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+}
+
+
+/*End of menu hamburger*/ 
