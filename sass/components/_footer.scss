@@ -1,6 +1,14 @@
 /*mobile*/
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
+  .contact {
+    width: 480px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .contact--bgc {
     background-color: $mediumGrey;
   }
@@ -34,6 +42,7 @@
     padding-bottom: 75px;
   }
   .address {
+    text-align: center;
     &__item:not(:last-child) {
       margin-bottom: 9px;
     }
@@ -61,10 +70,13 @@
   }
 
   .footer-container {
+    width: 480px;
     display: flex;
     align-items: center;
     align-content: center;
     flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .flex-container-right {
@@ -126,14 +138,15 @@
 
   .form-newsletter {
     display: inline-block;
-    width: 570px;
+    width: 450px;
     height: 86px;
-    margin-left: 78px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 72px;
     margin-bottom: 94px;
 
     &__label-sign-up {
-      display: inline-block;
+      display: flex;
       width: 207px;
       margin: 0 auto;
       font-family: $mainFont;
@@ -143,6 +156,7 @@
       line-height: 1.143;
       letter-spacing: 0.03em;
       color: $white;
+      text-align: center;
     }
 
     &__input {
@@ -210,19 +224,37 @@
     }
   }
 
+  .form-container {
+    width: 450px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+  }
   .form-container-flex {
     display: flex;
     flex-direction: column;
   }
+
+  .contact-logo,
+  .address-container,
+  .flex-container-right,
+  .footer-social-media__title,
+  .form-container,
+  .form-container-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-
-
 
 /*===TABLET===*/
 
-@media screen and (min-width: 768px) and (max-width:1199px) {
-
- .contact--bgc {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact--bgc {
     background-color: $mediumGrey;
   }
 
@@ -236,6 +268,7 @@
       letter-spacing: 0.03em;
       color: $white;
       text-decoration: none;
+      padding-left: 115px;
     }
 
     &--padding {
@@ -253,8 +286,11 @@
     letter-spacing: 0.03em;
     text-decoration: none;
     padding-bottom: 75px;
+    padding-left: 76px;
   }
   .address {
+    text-align: center;
+
     &__item:not(:last-child) {
       margin-bottom: 9px;
     }
@@ -289,8 +325,9 @@
 
   .flex-container-right {
     width: 206px;
-    margin-left: 70px;
-    margin-top: 72px;
+    margin-left: 114px;
+    margin-right: 89px;
+    margin-top: 40px;
     margin-bottom: 100px;
   }
 
@@ -353,7 +390,7 @@
     margin-bottom: 94px;
 
     &__label-sign-up {
-      display: inline-block;
+      display: flex;
       width: 207px;
       margin: 0 auto;
       font-family: $mainFont;
@@ -363,6 +400,7 @@
       line-height: 1.143;
       letter-spacing: 0.03em;
       color: $white;
+      text-align: center;
     }
 
     &__input {
@@ -432,11 +470,12 @@
 
   .form-container-flex {
     display: flex;
-    
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
   }
-
 }
-
 
 /*===DESKTOP===*/
 
