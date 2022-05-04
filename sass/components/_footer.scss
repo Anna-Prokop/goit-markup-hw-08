@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .contact {
-    width: 480px;
+    min-width: 480px;
     display: flex;
     justify-content: center;
     margin-left: auto;

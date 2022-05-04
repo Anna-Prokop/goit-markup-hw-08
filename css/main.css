@@ -38,7 +38,6 @@ img {
 
 .container {
   width: 100%;
-  padding: 0 15px;
   margin: 0 auto;
   align-items: center;
   margin: 0 auto;
@@ -53,7 +52,6 @@ img {
 @media screen and (min-width: 320px) {
   .container {
     max-width: 320px;
-    padding: 0 15px;
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
@@ -63,7 +61,6 @@ img {
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
-    padding: 0 15px;
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
@@ -74,7 +71,6 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 0 15px;
   }
 }
 
@@ -82,7 +78,6 @@ img {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    padding: 0 15px;
   }
   .section {
     padding-bottom: 94px;
@@ -95,6 +90,10 @@ img {
   min-width: 480px;
   max-width: 767px;
   border-bottom: 1px solid #ececec;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header-container {
@@ -118,7 +117,7 @@ img {
   color: #000000;
   text-decoration: none;
   cursor: pointer;
-  margin-right: 93px;
+  margin-left: 15px;
   padding-top: 24px;
   padding-bottom: 25px;
   width: 134px;
@@ -138,7 +137,7 @@ img {
 }
 
 /*======TABLET======*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hamburger {
     display: none;
   }
@@ -261,6 +260,9 @@ img {
   .header {
     height: 80px;
     min-width: 1200px;
+  }
+  .hamburger {
+    display: none;
   }
   .navigation {
     display: flex;
@@ -1355,6 +1357,7 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin-left: 15px;
   }
   .portfolio-button__item {
     width: 128px;
@@ -1397,8 +1400,6 @@ img {
   }
   .portfolio-list {
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     flex-wrap: wrap;
     margin-left: -15px;
@@ -1412,6 +1413,10 @@ img {
     transition-property: cursor, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .portfolio-list__photo {
+    width: 450px;
+    height: 294px;
   }
   .portfolio-list__title {
     font-family: Roboto, sans-serif;
@@ -1442,7 +1447,7 @@ img {
   }
   .portfolio-list__overlay-container {
     position: relative;
-    width: 370px;
+    width: 450px;
     height: 294px;
     overflow: hidden;
   }
@@ -1520,6 +1525,10 @@ img {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .portfolio-list__photo {
+    width: 354px;
+    height: 294px;
+  }
   .portfolio-list__title {
     font-family: Roboto, sans-serif;
     font-weight: 700;
@@ -1540,8 +1549,8 @@ img {
     padding-bottom: 20px;
   }
   .portfolio-list__box-title {
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .portfolio-list__item:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1582,6 +1591,12 @@ img {
 
 /*==DESKTOP==*/
 @media screen and (min-width: 1200px) {
+  .section-portfolio {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .section-portfolio {
     min-width: 1200px;
   }
@@ -1629,6 +1644,10 @@ img {
     transition-property: cursor, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .portfolio-list__photo {
+    width: 370px;
+    height: 294px;
   }
   .portfolio-list__title {
     font-family: Roboto, sans-serif;
@@ -1693,7 +1712,7 @@ img {
 /*mobile*/
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .contact {
-    width: 480px;
+    min-width: 480px;
     display: flex;
     justify-content: center;
     margin-left: auto;

@@ -4,6 +4,10 @@
   min-width: 480px;
   max-width: 767px;
   border-bottom: 1px solid #ececec;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .header-container {
   display: flex;
@@ -25,7 +29,7 @@
     color: $primaryColor;
     text-decoration: none;
     cursor: pointer;
-    margin-right: 93px;
+    margin-left: 15px;
     padding-top: 24px;
     padding-bottom: 25px;
     width: 134px;
@@ -47,30 +51,30 @@
 
 /*======TABLET======*/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hamburger {
     display: none;
   }
 
   .navigation {
-  display: flex;
+    display: flex;
 
-  &__logo {
-    font-family: $secondaryFont;
-    font-style: normal;
-    font-weight: $bold;
-    font-size: 26px;
-    line-height: 1.192;
-    letter-spacing: 0.03em;
-    color: $primaryColor;
-    text-decoration: none;
-    cursor: pointer;
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    width: 134px;
+    &__logo {
+      font-family: $secondaryFont;
+      font-style: normal;
+      font-weight: $bold;
+      font-size: 26px;
+      line-height: 1.192;
+      letter-spacing: 0.03em;
+      color: $primaryColor;
+      text-decoration: none;
+      cursor: pointer;
+      margin-right: 93px;
+      padding-top: 24px;
+      padding-bottom: 25px;
+      width: 134px;
+    }
   }
-}
 
   .header {
     height: 80px;
@@ -195,26 +199,29 @@
     min-width: 1200px;
   }
 
+  .hamburger {
+    display: none;
+  }
 
   .navigation {
-  display: flex;
+    display: flex;
 
-  &__logo {
-    font-family: $secondaryFont;
-    font-style: normal;
-    font-weight: $bold;
-    font-size: 26px;
-    line-height: 1.192;
-    letter-spacing: 0.03em;
-    color: $primaryColor;
-    text-decoration: none;
-    cursor: pointer;
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    width: 134px;
+    &__logo {
+      font-family: $secondaryFont;
+      font-style: normal;
+      font-weight: $bold;
+      font-size: 26px;
+      line-height: 1.192;
+      letter-spacing: 0.03em;
+      color: $primaryColor;
+      text-decoration: none;
+      cursor: pointer;
+      margin-right: 93px;
+      padding-top: 24px;
+      padding-bottom: 25px;
+      width: 134px;
+    }
   }
-}
 
   .navigation-list {
     display: flex;
