@@ -1,10 +1,11 @@
 .section-hero {
-  min-width: 320px;
+  min-width: 480px;
+  max-width: 767px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("/images/Sectionhero/section_hero_mobile.jpg");
+    url("../../../images/Sectionhero/section_hero_mobile.jpg");
   background-repeat: no-repeat;
   height: 400px;
   margin: auto;
@@ -56,19 +57,20 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("/images/Sectionhero/section_hero_mobile@2x.jpg");
+      url("../../../images/Sectionhero/section_hero_mobile@2x.jpg");
   }
 }
 /*=====TABLET=====*/
 
 @media screen and (min-width: 768px) {
   .section-hero {
-    min-width: 769px;
+    min-width: 768px;
+    max-width: 1199px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("/images/Sectionhero/section_hero_tablet.jpg");
+      url("../../../images/Sectionhero/section_hero_tablet.jpg");
     background-repeat: no-repeat;
     height: 400px;
     margin: auto;
@@ -83,7 +85,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("/images/Sectionhero/section_hero_tablet@2x.jpg");
+        url("../../../images/Sectionhero/section_hero_desktop.jpg");
     }
   }
 }
@@ -94,7 +96,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("/images/Sectionhero/section_hero_desktop.jpg");
+      url("../../../images/Sectionhero/section_hero_desktop@2x.jpg");
     background-repeat: no-repeat;
     height: 600px;
     margin: auto;

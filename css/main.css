@@ -100,7 +100,6 @@ img {
   display: flex;
   align-items: center;
   min-height: 60px;
-  justify-content: space-around;
 }
 
 .navigation {
@@ -117,6 +116,7 @@ img {
   color: #000000;
   text-decoration: none;
   cursor: pointer;
+  margin-right: 150px;
   margin-left: 15px;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -154,6 +154,7 @@ img {
     color: #000000;
     text-decoration: none;
     cursor: pointer;
+    margin-left: 15px;
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
@@ -164,7 +165,7 @@ img {
     min-width: 100%;
   }
   .header-container {
-    width: 100%;
+    min-width: 100%;
   }
   .navigation-list {
     display: flex;
@@ -208,7 +209,7 @@ img {
     position: absolute;
     content: "";
     display: block;
-    top: 42px;
+    top: 44px;
     left: 0;
     width: 100%;
     height: 4px;
@@ -221,14 +222,16 @@ img {
   }
   .contact-list {
     display: flex;
-    align-items: center;
-    align-content: center;
+    align-items: flex-start;
+    margin-right: 15px;
     margin-left: 50px;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
   .contact-list__mail {
     margin-right: 15px;
     width: 138px;
+  }
+  .contact-list__item:not(:last-child) {
     margin-bottom: 10px;
   }
   .contact-list__mail, .contact-list__phone-number {
@@ -371,8 +374,9 @@ img {
 }
 
 .section-hero {
-  min-width: 320px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/Sectionhero/section_hero_mobile.jpg");
+  min-width: 480px;
+  max-width: 767px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/Sectionhero/section_hero_mobile.jpg");
   background-repeat: no-repeat;
   height: 400px;
   margin: auto;
@@ -418,15 +422,16 @@ img {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
   .section-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/Sectionhero/section_hero_mobile@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/Sectionhero/section_hero_mobile@2x.jpg");
   }
 }
 
 /*=====TABLET=====*/
 @media screen and (min-width: 768px) {
   .section-hero {
-    min-width: 769px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/Sectionhero/section_hero_tablet.jpg");
+    min-width: 768px;
+    max-width: 1199px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/Sectionhero/section_hero_tablet.jpg");
     background-repeat: no-repeat;
     height: 400px;
     margin: auto;
@@ -436,13 +441,13 @@ img {
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 2dppx) and (min-width: 768px) {
   .section-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/Sectionhero/section_hero_tablet@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/Sectionhero/section_hero_desktop.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .section-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/Sectionhero/section_hero_desktop.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/Sectionhero/section_hero_desktop@2x.jpg");
     background-repeat: no-repeat;
     height: 600px;
     margin: auto;
@@ -698,7 +703,7 @@ img {
 .lorem-ipsum-container {
   min-width: 480px;
   display: flex;
-  align-items: center;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -718,6 +723,8 @@ img {
   width: 450px;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .lorem-ipsum__container-icon {
@@ -975,7 +982,7 @@ img {
 
 .our-team__social-media-container {
   width: 206px;
-  margin: 0 auto;
+  margin: 16px auto 24px auto;
 }
 
 .our-team__social-media {
@@ -1064,7 +1071,7 @@ img {
   }
   .our-team__social-media-container {
     width: 206px;
-    margin: 16px 32px 30px;
+    margin: 16px auto 24px auto;
   }
   .our-team__social-media {
     display: flex;
@@ -1218,6 +1225,8 @@ img {
   flex-wrap: wrap;
   align-items: center;
   min-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .our-clients__item {
@@ -1228,6 +1237,8 @@ img {
   border: 1px solid #afb1b8;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   fill: #afb1b8;
   transition-property: fill, border, cursor;
   transition-duration: 250ms;
@@ -1235,7 +1246,6 @@ img {
 }
 
 .our-clients__item:not(:last-child) {
-  margin-right: 30px;
   margin-bottom: 30px;
 }
 
@@ -1715,8 +1725,6 @@ img {
     min-width: 480px;
     display: flex;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
   }
   .contact--bgc {
     background-color: #2f303a;
@@ -1931,6 +1939,10 @@ img {
 
 /*===TABLET===*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-container {
+    min-width: 768px;
+    display: flex;
+  }
   .contact--bgc {
     background-color: #2f303a;
   }
@@ -1959,6 +1971,7 @@ img {
     text-decoration: none;
     padding-bottom: 75px;
     padding-left: 76px;
+    display: flex;
   }
   .address {
     text-align: center;
@@ -2307,6 +2320,7 @@ img {
   width: 40px;
   height: 40px;
   margin-left: 180px;
+  margin-right: 10px;
 }
 
 .hamburger__icon {
@@ -2342,7 +2356,9 @@ img {
 }
 
 .hamburger-menu__close-btn {
-  margin-left: 440px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
   width: 40px;
   height: 40px;
   background-color: transparent;
