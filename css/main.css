@@ -728,6 +728,7 @@ img {
     animation-name: ModalWindowAnimation;
     animation-duration: 2000ms;
     transform-origin: top left;
+    margin-top: 0px;
   }
   .modal-window__close-btn {
     position: absolute;
