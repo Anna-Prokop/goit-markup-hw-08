@@ -2,6 +2,8 @@
 /*==font-family==*/
 /*==font-weight==*/
 body {
+  max-width: 100%;
+  overflow-x: hidden;
   font-family: "Roboto", "Raleway" sans-serif;
 }
 
@@ -49,12 +51,6 @@ img {
 }
 
 /*===MOBILE==*/
-@media screen and (min-width: 320px) {
-  body {
-    overflow-x: hidden;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
