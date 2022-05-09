@@ -21,7 +21,7 @@
   flex-wrap: wrap;
   align-items: center;
   min-width: 480px;
-    margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
 
   &__item {
@@ -32,17 +32,13 @@
     border: 1px solid $lightGrey;
     align-items: center;
     justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
     fill: $lightGrey;
     transition-property: fill, border, cursor;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  &__item:not(:last-child) {
-
-    margin-bottom: 30px;
   }
 
   &__icon {
@@ -101,7 +97,7 @@
 
     &__item:not(:last-child) {
       margin-right: 15px;
-      margin-bottom: 15px;
+ 
     }
     &__item:hover,
     &__item:focus {
