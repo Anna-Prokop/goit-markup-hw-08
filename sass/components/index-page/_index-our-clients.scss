@@ -62,11 +62,8 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-our-clients {
     min-width: 768px;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+
   }
 
   .our-clients {
@@ -81,31 +78,12 @@
       display: flex;
       width: 226px;
       height: 92px;
-      background-color: $white;
-      border: 1px solid $lightGrey;
-      align-items: center;
-      justify-content: center;
-      fill: $lightGrey;
-      transition-property: fill, border, cursor;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__icon {
-      display: flex;
-      width: 106px;
-      height: 60px;
     }
 
     &__item:not(:last-child) {
       margin-right: 15px;
     }
-    &__item:hover,
-    &__item:focus {
-      fill: #2196f3;
-      border: 1px solid #2196f3;
-      cursor: pointer;
-    }
+   
   }
 }
 
@@ -114,21 +92,11 @@
 @media screen and (min-width: 1200px) {
   .section-our-clients {
     min-width: 1200px;
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .section-our-clients__title {
-    font-family: $mainFont;
-    font-style: normal;
-    font-weight: $bold;
     font-size: 36px;
     line-height: 1.167;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $darkGrey;
     margin-bottom: 48px;
   }
   .our-clients {
@@ -136,34 +104,14 @@
     align-items: center;
 
     &__item {
-      display: flex;
+  
       width: 170px;
-      height: 92px;
-      background-color: $white;
-      border: 1px solid $lightGrey;
-      align-items: center;
-      justify-content: center;
-      fill: $lightGrey;
-      transition-property: fill, border, cursor;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      
     }
 
     &__item:not(:last-child) {
       margin-right: 30px;
     }
 
-    &__icon {
-      display: flex;
-      width: 106px;
-      height: 60px;
-    }
-
-    &__item:hover,
-    &__item:focus {
-      fill: #2196f3;
-      border: 1px solid #2196f3;
-      cursor: pointer;
-    }
   }
 }

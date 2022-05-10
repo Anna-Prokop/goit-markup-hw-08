@@ -72,10 +72,6 @@
         rgba(47, 48, 58, 0.4)
       ),
       url('/images/sectionheroimages/section_hero_tablet.jpg');
-    background-repeat: no-repeat;
-    height: 400px;
-    margin: auto;
-    background-size: cover;
   }
 }
 
@@ -101,25 +97,16 @@
       url('/images/sectionheroimages/section_hero_desktop.jpg');
     background-repeat: no-repeat;
     height: 600px;
-    margin: auto;
     max-width: 1600px;
-    background-size: cover;
+    
 
     &__title {
-      font-family: $mainFont;
-      font-weight: $ultraBold;
+
       font-size: 44px;
       line-height: 1.364;
-      text-align: center;
       letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: $white;
       padding-top: 200px;
-      padding-bottom: 30px;
-      padding-left: auto;
-      padding-right: auto;
       width: 696px;
-      margin: auto;
     }
   }
 }

@@ -56,33 +56,21 @@
     display: none;
   }
 
-  .navigation {
-    display: flex;
-
-    &__logo {
-      font-family: $secondaryFont;
-      font-style: normal;
-      font-weight: $bold;
-      font-size: 26px;
-      line-height: 1.192;
-      letter-spacing: 0.03em;
-      color: $primaryColor;
-      text-decoration: none;
-      cursor: pointer;
-      margin-left: 15px;
-      margin-right: 93px;
-      padding-top: 24px;
-      padding-bottom: 25px;
-      width: 134px;
-    }
-  }
-
   .header {
     height: 80px;
     min-width: 100%;
   }
   .header-container {
     min-width: 100%;
+  }
+
+  .navigation {
+    display: flex;
+
+    &__logo {
+      margin-right: 93px;
+      padding-top: 24px;
+    }
   }
 
   .navigation-list {
@@ -211,15 +199,6 @@
     display: flex;
 
     &__logo {
-      font-family: $secondaryFont;
-      font-style: normal;
-      font-weight: $bold;
-      font-size: 26px;
-      line-height: 1.192;
-      letter-spacing: 0.03em;
-      color: $primaryColor;
-      text-decoration: none;
-      cursor: pointer;
       margin-right: 93px;
       padding-top: 24px;
       padding-bottom: 25px;
