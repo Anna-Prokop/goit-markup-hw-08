@@ -375,12 +375,6 @@ img {
   background-size: cover;
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
-  .section-hero .section-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/sectionheroimages/section_hero_mobile@2x.jpg");
-  }
-}
-
 .section-hero__title {
   font-family: Roboto, sans-serif;
   font-weight: 900;
@@ -418,6 +412,12 @@ img {
   border: none;
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/sectionheroimages/section_hero_mobile@2x.jpg");
+  }
+}
+
 /*=====TABLET=====*/
 @media screen and (min-width: 768px) {
   .section-hero {
@@ -431,7 +431,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-width: 768px) and (min-resolution: 2dppx) and (min-width: 768px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .section-hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/sectionheroimages/section_hero_tablet@2x.jpg");
   }
@@ -447,15 +447,6 @@ img {
     max-width: 1600px;
     background-size: cover;
   }
-}
-
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 2dppx) and (min-width: 1200px) {
-  .section-hero .section-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/sectionheroimages/section_hero_desktop@2x.jpg");
-  }
-}
-
-@media screen and (min-width: 1200px) {
   .section-hero__title {
     font-family: Roboto, sans-serif;
     font-weight: 900;
@@ -471,6 +462,12 @@ img {
     padding-right: auto;
     width: 696px;
     margin: auto;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/sectionheroimages/section_hero_desktop@2x.jpg");
   }
 }
 
