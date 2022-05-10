@@ -375,6 +375,12 @@ img {
   background-size: cover;
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
+  .section-hero .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/sectionheroimages/section_hero_mobile@2x.jpg");
+  }
+}
+
 .section-hero__title {
   font-family: Roboto, sans-serif;
   font-weight: 900;
@@ -410,12 +416,6 @@ img {
   padding: 10px 41px;
   margin: auto;
   border: none;
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
-  .section-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/sectionheroimages/section_hero_mobile@2x.jpg");
-  }
 }
 
 /*=====TABLET=====*/
