@@ -1,8 +1,11 @@
 .section-hero {
   min-width: 480px;
   max-width: 767px;
-  background-image: 
-    url('/images/sectionheroimages/section_hero_mobile.jpg');
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/sectionheroimages/section_hero_mobile.jpg');
   background-repeat: no-repeat;
   height: 400px;
   margin: auto;
@@ -50,8 +53,11 @@
   screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
   .section-hero {
-    background-image: 
-      url('/images/sectionheroimages/section_hero_mobile@2x.jpg');
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/sectionheroimages/section_hero_mobile@2x.jpg');
   }
 }
 /*=====TABLET=====*/
@@ -60,8 +66,11 @@
   .section-hero {
     min-width: 768px;
     max-width: 1199px;
-    background-image: 
-      url('/images/sectionheroimages/section_hero_tablet.jpg');
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/sectionheroimages/section_hero_tablet.jpg');
     background-repeat: no-repeat;
     height: 400px;
     margin: auto;
@@ -72,16 +81,22 @@
     screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .section-hero {
-      background-image: 
-        url('/images/sectionheroimages/section_hero_desktop.jpg');
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/sectionheroimages/section_hero_desktop.jpg');
     }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .section-hero {
-    background-image: 
-      url('/images/sectionheroimages/section_hero_desktop@2x.jpg');
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/sectionheroimages/section_hero_desktop@2x.jpg');
     background-repeat: no-repeat;
     height: 600px;
     margin: auto;
