@@ -22,14 +22,24 @@
     <header class="header">
       <div class="container header-container">
         <nav class="navigation">
-          <a class="navigation__logo" href="#"><span class="navigation-logo--color">Web</span>Studio</a>
+          <a class="navigation__logo" href="#"
+            ><span class="navigation-logo--color">Web</span>Studio</a
+          >
           <ul class="navigation-list">
-            <li class="navigation-list__item ">
-              <a class="navigation-list__link navigation-list--link-active" href="index.html">Agencja</a>
+            <li class="navigation-list__item">
+              <a
+                class="navigation-list__link navigation-list--link-active"
+                href="index.html"
+                >Agencja</a
+              >
             </li>
             <li class="navigation-list__item">
-              <a class="navigation-list__link" href="portfolio.html" type="_self"
-                >Portfolio</a>
+              <a
+                class="navigation-list__link"
+                href="portfolio.html"
+                type="_self"
+                >Portfolio</a
+              >
             </li>
             <li class="navigation-list__item">
               <a class="navigation-list__link" href="#">Kontakt</a>
@@ -37,41 +47,40 @@
           </ul>
         </nav>
 
-<ul class="contact-list">
+        <ul class="contact-list">
+          <li class="contact-list__item">
+            <a class="contact-list__mail" href="mailto:info@devstudio.com">
+              <svg class="contact-list__envelope-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
 
+          <li class="contact-list__item">
+            <a class="contact-list__phone-number" href="tel:+48111111111">
+              <svg class="contact-list__smartphone-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111</a
+            >
+          </li>
+        </ul>
 
-
-<li class="contact-list__item">
-        <a class="contact-list__mail" href="mailto:info@devstudio.com">
-          <svg class="contact-list__envelope-icon" width="16" height="12">
-            <use href="./images/icons.svg#icon-envelope"></use>
+        <button class="hamburger" type="button" data-hamburger-open>
+          <svg class="hamburger__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-hamburger"></use>
           </svg>
-          info@devstudio.com </a>
-
-      
-</li>
-
-<li class="contact-list__item">
-
-        <a class="contact-list__phone-number" href="tel:+48111111111">
-          <svg class="contact-list__smartphone-icon" width="10" height="16">
-            <use href="./images/icons.svg#icon-smartphone"></use>
-          </svg>
-          +48 111 111 111</a>
-      </li> 
-    
-      </ul>
-
-      <button class="hamburger" type="button" data-hamburger-open>
-        <svg class="hamburger__icon" width="40" height="40">
-        <use href="./images/icons.svg#icon-hamburger"></use>
-        </svg>
-      </button>
+        </button>
       </div>
-        <!--HAMBURGER MENU--->
+      <!--HAMBURGER MENU--->
       <div class="hamburger-backdrop is-hidden" data-hamburger>
         <div class="hamburger-menu">
-          <button type="button" class="hamburger-menu__close-btn" data-hamburger-close>
+          <button
+            type="button"
+            class="hamburger-menu__close-btn"
+            data-hamburger-close
+          >
             <svg class="hamburger-menu__icon" width="40" height="40">
               <use href="./images/closebutton.svg#icon-closebutton"></use>
             </svg>
@@ -90,20 +99,25 @@
               </li>
             </ul>
           </div>
-         
+
           <div class="container-address-mobile">
             <ul class="address-mobile">
               <li class="address-mobile__item">
-                <a class="address-mobile__number-link" href="tel:+48111111111"> +48 111 111 111</a>
+                <a class="address-mobile__number-link" href="tel:+48111111111">
+                  +48 111 111 111</a
+                >
               </li>
               <li class="address-mobile__item">
-                <a class="address-mobile__mail-link" href="mailto:info@devstudio.com">
+                <a
+                  class="address-mobile__mail-link"
+                  href="mailto:info@devstudio.com"
+                >
                   info@devstudio.com</a
                 >
               </li>
             </ul>
           </div>
-  
+
           <div class="social-media-mobile">
             <ul class="social-media-mobile__list">
               <li class="social-media-mobile__item">
@@ -120,7 +134,6 @@
               </li>
             </ul>
           </div>
-  
         </div>
       </div>
       <!--end of HAMBURGER MENU-->
@@ -130,68 +143,118 @@
       <!--section HERO-->
       <section class="section-hero">
         <div class="container">
-          <h1 class="section-hero__title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="section-hero__module-btn" type="button" data-modal-open>Zamów usługę</button>
+          <h1 class="section-hero__title">
+            EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+          </h1>
+          <button
+            class="section-hero__module-btn"
+            type="button"
+            data-modal-open
+          >
+            Zamów usługę
+          </button>
         </div>
         <!--modal window-->
         <div class="backdrop is-hidden" data-modal>
           <div class="modal-window">
-          
-            <button type="button" class="modal-window__close-btn" data-modal-close>
+            <button
+              type="button"
+              class="modal-window__close-btn"
+              data-modal-close
+            >
               <svg class="modal-window__button-icon">
                 <use href="./images/closebutton.svg#icon-closebutton"></use>
               </svg>
             </button>
-          
-            <p class="modal-window__title">Zostaw swoje dane w formularzu poniżej</p>
-            
+
+            <p class="modal-window__title">
+              Zostaw swoje dane w formularzu poniżej
+            </p>
 
             <form class="modal-form">
               <label for="username" class="modal-form__label-style">Imię</label>
               <div class="modal-form__form-container">
-              <input type="text" class="modal-form__input" name="username" id="username">
-              <svg class="modal-form__input-icon">
-                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
-              </svg>
-            </div>
+                <input
+                  type="text"
+                  class="modal-form__input"
+                  name="username"
+                  id="username"
+                />
+                <svg class="modal-form__input-icon">
+                  <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+                </svg>
+              </div>
 
               <label for="phone" class="modal-form__label-style">Telefon</label>
               <div class="modal-form__form-container">
-              <input type="tel" class="modal-form__input" name="phone" id="phone">
-              <svg class="modal-form__input-icon">
-                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
-              </svg>
-            </div>
+                <input
+                  type="tel"
+                  class="modal-form__input"
+                  name="phone"
+                  id="phone"
+                />
+                <svg class="modal-form__input-icon">
+                  <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                </svg>
+              </div>
 
               <label for="email" class="modal-form__label-style">Email</label>
               <div class="modal-form__form-container">
-              <input type="email" class="modal-form__input" name="email" id="email">
-              <svg class="modal-form__input-icon">
-                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
-              </svg>
-            </div>
+                <input
+                  type="email"
+                  class="modal-form__input"
+                  name="email"
+                  id="email"
+                />
+                <svg class="modal-form__input-icon">
+                  <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                </svg>
+              </div>
 
-            
-             <label for="comment" class="modal-form__label-style">Komentarz</label>
+              <label for="comment" class="modal-form__label-style"
+                >Komentarz</label
+              >
               <div class="modal-form__form-container">
-              <textarea class="modal-form__textarea" id="comment" name="comment" placeholder="Wprowadź tekst"></textarea> 
-            </div>
-            
-            
+                <textarea
+                  class="modal-form__textarea"
+                  id="comment"
+                  name="comment"
+                  placeholder="Wprowadź tekst"
+                ></textarea>
+              </div>
+
               <div class="modal-form__statute-container">
-                <input type="checkbox" class="modal-form__input-statute visually-hidden" name="email" id="statute">
-              <label for="statute" class="modal-form__statute-style">Oświadczam iż akceptuję <span><a class="modal-form--statute-link-decoration" href="">Regulamin</a></span> i <span><a class="modal-form--statute-link-decoration" href="">Politykę Prywatności.</a></span></label>
-            </div>
+                <input
+                  type="checkbox"
+                  class="modal-form__input-statute visually-hidden"
+                  name="email"
+                  id="statute"
+                />
+                <label for="statute" class="modal-form__statute-style"
+                  >Oświadczam iż akceptuję
+                  <span
+                    ><a class="modal-form--statute-link-decoration" href=""
+                      >Regulamin</a
+                    ></span
+                  >
+                  i
+                  <span
+                    ><a class="modal-form--statute-link-decoration" href=""
+                      >Politykę Prywatności.</a
+                    ></span
+                  ></label
+                >
+              </div>
 
-            <div class="modal-form__button-container"><button type="submit" class="modal-form__form-button"> Wyślij
-            </button>
-            </div>
-
+              <div class="modal-form__button-container">
+                <button type="submit" class="modal-form__form-button">
+                  Wyślij
+                </button>
+              </div>
             </form>
           </div>
         </div>
         <!--end of modal window-->
-
       </section>
 
       <!--section Lorem Ipsum-->
@@ -260,43 +323,57 @@
 
           <ul class="about-us">
             <li class="about-us__item">
-
               <picture>
-                <source media="(min-width: 1200px)" srcset= "images/Aboutus/computer_applications_desktop.jpg 1x, images/Aboutus/computer_applications_desktop@2x.jpg 2x">
-              <img
-                src="images/Aboutus/About_us_img1.jpg"
-                alt="Phone and laptop"
-                width="370"
-                height="294"
-              />
-
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    images/sectionaboutus/computer_applications_desktop.jpg    1x,
+                    images/sectionaboutus/computer_applications_desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="images/sectionaboutus/About_us_img1.jpg"
+                  alt="Phone and laptop"
+                  width="370"
+                  height="294"
+                />
               </picture>
-               <p class="about-us__subtitle">APLIKACJE KOMPUTEROWE</p>
+              <p class="about-us__subtitle">APLIKACJE KOMPUTEROWE</p>
             </li>
             <li class="about-us__item">
               <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    images/sectionaboutus/mobile_applications_desktop.jpg    1x,
+                    images/sectionaboutus/mobile_applications_desktop@2x.jpg 2x
+                  "
+                />
 
-               <source media="(min-width: 1200px)" srcset= "images/Aboutus/mobile_applications_desktop.jpg 1x, images/Aboutus/mobile_applications_desktop@2x.jpg 2x">
-              
-
-              <img
-                src="images/Aboutus/About_us_img_2.jpg"
-                alt="The person typing on a keyboard"
-                width="370"
-                height="294"
-              />
+                <img
+                  src="images/sectionaboutus/About_us_img_2.jpg"
+                  alt="The person typing on a keyboard"
+                  width="370"
+                  height="294"
+                />
               </picture>
               <p class="about-us__subtitle">APLIKACJE MOBILNE</p>
             </li>
             <li class="about-us__item">
               <picture>
-                <source media="(min-width: 1200px)" srcset= "images/Aboutus/graphic_solution_desktop.jpg 1x, images/Aboutus/graphic_solution_desktop@2x.jpg 2x">
-              <img
-                src="images/Aboutus/About_us_img3.jpg"
-                alt="Tablet"
-                width="370"
-                height="294"
-              />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    images/sectionaboutus/graphic_solution_desktop.jpg    1x,
+                    images/sectionaboutus/graphic_solution_desktop@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="images/sectionaboutus/About_us_img3.jpg"
+                  alt="Tablet"
+                  width="370"
+                  height="294"
+                />
               </picture>
               <p class="about-us__subtitle">ROZWIĄZANIA GRAFICZNE</p>
             </li>
@@ -310,20 +387,36 @@
           <h2 class="section-our-team__title">Nasz zespół</h2>
           <ul class="our-team">
             <li class="our-team__item">
-             
               <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    images/sectionourteam/product_designer_desktop.jpg    1x,
+                    images/sectionourteam/product_designer_desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    images/sectionourteam/product_designer_tablet.jpg    1x,
+                    images/sectionourteam/product_designer_tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    images/sectionourteam/product_designer_mobile.jpg    1x,
+                    images/sectionourteam/product_designer_mobile@2x.jpg 2x
+                  "
+                />
 
-              <source media="(min-width: 1200px)" srcset= "images/Ourteam/product_designer_desktop.jpg 1x, images/Ourteam/product_designer_desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="images/Ourteam/product_designer_tablet.jpg 1x, images/Ourteam/product_designer_tablet@2x.jpg 2x">
-              <source media="(min-width: 320px)" srcset="images/Ourteam/product_designer_mobile.jpg 1x, images/Ourteam/product_designer_mobile@2x.jpg 2x"> 
-
-              <img
-                class="our-team__photo"
-                src="images/Ourteam/our_team_img1.jpg"
-                alt="Photo of Product Designer"
-                width="810"
-                height="780"
-              />
+                <img
+                  class="our-team__photo"
+                  src="images/sectionourteam/our_team_img1.jpg"
+                  alt="Photo of Product Designer"
+                  width="810"
+                  height="780"
+                />
               </picture>
 
               <h3 class="our-team__name">John Doe</h3>
@@ -362,25 +455,38 @@
               </div>
             </li>
 
-
-
             <li class="our-team__item">
-
               <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    images/sectionourteam/frontend_developer_desktop.jpg    1x,
+                    images/sectionourteam/frontend_developer_desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    images/sectionourteam/frontend_developer_tablet.jpg    1x,
+                    images/sectionourteam/frontend_developer_tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    images/sectionourteam/frontend_developer_mobile.jpg    1x,
+                    images/sectionourteam/frontend_developer_mobile@2x.jpg 2x
+                  "
+                />
 
-              <source media="(min-width: 1200px)" srcset= "images/Ourteam/frontend_developer_desktop.jpg 1x, images/Ourteam/frontend_developer_desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="images/Ourteam/frontend_developer_tablet.jpg 1x, images/Ourteam/frontend_developer_tablet@2x.jpg 2x">
-              <source media="(min-width: 320px)" srcset="images/Ourteam/frontend_developer_mobile.jpg 1x, images/Ourteam/frontend_developer_mobile@2x.jpg 2x"> 
-
-              
-              <img
-                class="our-team__photo"
-                src="images/Ourteam/our_team_img2.jpg"
-                alt="Photo of Frontend Developer"
-                width="810"
-                height="780"
-              />
-            </picture>
+                <img
+                  class="our-team__photo"
+                  src="images/sectionourteam/our_team_img2.jpg"
+                  alt="Photo of Frontend Developer"
+                  width="810"
+                  height="780"
+                />
+              </picture>
               <h3 class="our-team__name">John Doe</h3>
               <p class="our-team__role">Frontend Developer</p>
               <div class="our-team__social-media-container">
@@ -420,16 +526,34 @@
 
             <li class="our-team__item">
               <picture>
-              <source media="(min-width: 1200px)" srcset= "images/Ourteam/marketing_desktop.jpg 1x, images/Ourteam/marketing_desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="images/Ourteam/marketing_tablet.jpg 1x, images/Ourteam/marketing_tablet@2x.jpg 2x">
-              <source media="(min-width: 320px)" srcset="images/Ourteam/marketing_mobile.jpg 1x, images/Ourteam/marketing_mobile@2x.jpg 2x"> 
-              <img
-                class="our-team__photo"
-                src="images/Ourteam/our_team_img3.jpg"
-                alt="Photo of marketing department employee"
-                width="810"
-                height="780"
-              />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    images/sectionourteam/marketing_desktop.jpg    1x,
+                    images/sectionourteam/marketing_desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    images/sectionourteam/marketing_tablet.jpg    1x,
+                    images/sectionourteam/marketing_tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    images/sectionourteam/marketing_mobile.jpg    1x,
+                    images/sectionourteam/marketing_mobile@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="our-team__photo"
+                  src="images/sectionourteam/our_team_img3.jpg"
+                  alt="Photo of marketing department employee"
+                  width="810"
+                  height="780"
+                />
               </picture>
               <h3 class="our-team__name">John Doe</h3>
               <p class="our-team__role">Marketing</p>
@@ -468,17 +592,35 @@
             </li>
 
             <li class="our-team__item">
-             <picture>
-              <source media="(min-width: 1200px)" srcset= "images/Ourteam/ui_designer_desktop.jpg 1x, images/Ourteam/ui_designer_desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="images/Ourteam/ui_designer_tablet.jpg 1x, images/Ourteam/ui_designer_tablet@2x.jpg 2x">
-              <source media="(min-width: 320px)" srcset="images/Ourteam/ui_designer_mobile.jpg 1x, images/Ourteam/ui_designer_mobile@2x.jpg 2x"> 
-              <img
-                class="our-team__photo"
-                src="images/Ourteam/our_team_img4.jpg"
-                alt="Photo of UI Designer"
-                width="810"
-                height="780"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    images/sectionourteam/ui_designer_desktop.jpg    1x,
+                    images/sectionourteam/ui_designer_desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    images/sectionourteam/ui_designer_tablet.jpg    1x,
+                    images/sectionourteam/ui_designer_tablet@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    images/sectionourteam/ui_designer_mobile.jpg    1x,
+                    images/sectionourteam/ui_designer_mobile@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="our-team__photo"
+                  src="images/sectionourteam/our_team_img4.jpg"
+                  alt="Photo of UI Designer"
+                  width="810"
+                  height="780"
+                />
               </picture>
               <h3 class="our-team__name">John Doe</h3>
               <p class="our-team__role">UI Designer</p>
@@ -521,150 +663,140 @@
 
       <!--section Our Clients-->
 
-          <section class="section-our-clients section">
+      <section class="section-our-clients section">
         <div class="container container-our-clients">
           <h2 class="section-our-clients__title">Nasi klienci</h2>
           <ul class="our-clients">
-                  <li class="our-clients__item">
-                  
-                      <svg class="our-clients__icon">
-                        <use href="./images/icons.svg#icon-logo1"></use>
-                      </svg>
-                   
-                  </li>
-                 <li class="our-clients__item">
-                  
-                      <svg class="our-clients__icon">
-                        <use href="./images/icons.svg#icon-logo2"></use>
-                      </svg>
-                   
-                  </li>
-                  <li class="our-clients__item">
-                  
-                      <svg class="our-clients__icon">
-                        <use href="./images/icons.svg#icon-logo3"></use>
-                      </svg>
-                   
-                  </li>
-                  <li class="our-clients__item">
-                  
-                      <svg class="our-clients__icon">
-                        <use href="./images/icons.svg#icon-logo4"></use>
-                      </svg>
-                   
-                  </li>
-                  <li class="our-clients__item">
-                  
-                      <svg class="our-clients__icon">
-                        <use href="./images/icons.svg#icon-logo5"></use>
-                      </svg>
-                   
-                  </li>
-                  <li class="our-clients__item">
-                  
-                      <svg class="our-clients__icon">
-                        <use href="./images/icons.svg#icon-logo6"></use>
-                      </svg>
-                   
-                  </li>
-
-                </ul>
-          </div>
-</section>
-
+            <li class="our-clients__item">
+              <svg class="our-clients__icon">
+                <use href="./images/icons.svg#icon-logo1"></use>
+              </svg>
+            </li>
+            <li class="our-clients__item">
+              <svg class="our-clients__icon">
+                <use href="./images/icons.svg#icon-logo2"></use>
+              </svg>
+            </li>
+            <li class="our-clients__item">
+              <svg class="our-clients__icon">
+                <use href="./images/icons.svg#icon-logo3"></use>
+              </svg>
+            </li>
+            <li class="our-clients__item">
+              <svg class="our-clients__icon">
+                <use href="./images/icons.svg#icon-logo4"></use>
+              </svg>
+            </li>
+            <li class="our-clients__item">
+              <svg class="our-clients__icon">
+                <use href="./images/icons.svg#icon-logo5"></use>
+              </svg>
+            </li>
+            <li class="our-clients__item">
+              <svg class="our-clients__icon">
+                <use href="./images/icons.svg#icon-logo6"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
-<!--footer-->
+    <!--footer-->
     <footer class="contact contact--bgc">
       <div class="contact-container container footer-container">
+        <div class="flex-container">
+          <div class="contact-logo contact-logo--padding">
+            <a class="contact-logo__link" href="#"
+              ><span class="contact-logo--color">Web</span>Studio</a
+            >
+          </div>
 
-          <div class="flex-container">
-                <div class="contact-logo contact-logo--padding">
-                <a class="contact-logo__link" href="#"><span class="contact-logo--color">Web</span>Studio</a>
-                 </div>
+          <address class="address-container">
+            <ul class="address">
+              <li class="address__item">
+                <a
+                  class="address__street"
+                  href="https://goo.gl/maps/j62CxN92Yu1Q2Km39"
+                  target="_blank"
+                  >m. Warszawa, Aleje Jerozolimskie 21</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="address__mail" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="address__phone" href="tel:+48111111111"
+                  >+48 111 111 111</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
 
-                 <address class="address-container">
-                  <ul class="address">
-                  <li class="address__item">
-                   <a
-                   class="address__street"
-                    href="https://goo.gl/maps/j62CxN92Yu1Q2Km39"
-                     target="_blank"
-                      >m. Warszawa, Aleje Jerozolimskie 21</a>
-                        
-                    </li>
-                    <li class="address__item">
-                    <a class="address__mail" href="mailto:info@example.com"
-                     >info@example.com</a>
-                
-                      </li>
-                       <li class="address__item">
-                            <a class="address__phone" href="tel:+48111111111">+48 111 111 111</a>
-                                   
-                      </li>
-                      </ul>
-                      </address>
-               </div>
+        <div class="flex-container-right footer-social-media">
+          <p class="footer-social-media__title">DOŁĄCZ DO NAS</p>
+          <ul class="footer-social-media-list">
+            <li class="footer-social-media-list__item">
+              <a href="#" class="footer-social-media-list__link">
+                <svg class="footer-social-media-list__icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-media-list__item">
+              <a href="#" class="footer-social-media-list__link">
+                <svg class="footer-social-media-list__icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-media-list__item">
+              <a href="#" class="footer-social-media-list__link">
+                <svg class="footer-social-media-list__icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-media-list__item">
+              <a href="#" class="footer-social-media-list__link">
+                <svg class="footer-social-media-list__icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-                <div class="flex-container-right footer-social-media">
-          
-        
-                      <p class="footer-social-media__title">DOŁĄCZ DO NAS</p>
-                       <ul class="footer-social-media-list">
-                        <li class="footer-social-media-list__item">
-                        <a href="#" class="footer-social-media-list__link">
-                        <svg class="footer-social-media-list__icon">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                          </svg>
-                          </a>
-                         </li>
-                        <li class="footer-social-media-list__item">
-                          <a href="#" class="footer-social-media-list__link">
-                          <svg class="footer-social-media-list__icon">
-                           <use href="./images/icons.svg#icon-twitter"></use>
-                          </svg>
-                           </a>
-                           </li>
-                              <li class="footer-social-media-list__item">
-                             <a href="#" class="footer-social-media-list__link">
-                             <svg class="footer-social-media-list__icon">
-                             <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                            </a>
-                            </li>
-                           <li class="footer-social-media-list__item">
-                            <a href="#" class="footer-social-media-list__link">
-                              <svg class="footer-social-media-list__icon">
-                              <use href="./images/icons.svg#icon-linkedin"></use>
-                             </svg>
-                             </a>
-                             </li>
-                            </ul>
-              
-          
-                           </div>
-        
-                          <div class="form-container">
-                                <form class="form-newsletter">
-                                  <label for="newsletter" class="form-newsletter__label-sign-up">ZAPISZ SIĘ DO NEWSLETTERA </label>
-                                    <div class="form-container-flex">
-                                    <input class="form-newsletter__input" type="text" name="input-newsletter" id="newsletter" placeholder="E-mail"/>
-                                    <button class="form-newsletter__button" type="submit">
-                                    <span class="form-newsletter__button-title">Zapisz się</span>
-                                     <svg class="form-newsletter__button-icon"> <use href="./images/icons.svg#icon-icon-send"></use>
-                                       </svg>
-                                      </button>      
-                                     </div>
-                              </form>
-                             </div>
-           </div>                  
-    
+        <div class="form-container">
+          <form class="form-newsletter">
+            <label for="newsletter" class="form-newsletter__label-sign-up"
+              >ZAPISZ SIĘ DO NEWSLETTERA
+            </label>
+            <div class="form-container-flex">
+              <input
+                class="form-newsletter__input"
+                type="text"
+                name="input-newsletter"
+                id="newsletter"
+                placeholder="E-mail"
+              />
+              <button class="form-newsletter__button" type="submit">
+                <span class="form-newsletter__button-title">Zapisz się</span>
+                <svg class="form-newsletter__button-icon">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </footer>
 
-      <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script>
 
-     <script src="./js/mobile-menu.js"> </script>
-    
-   
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

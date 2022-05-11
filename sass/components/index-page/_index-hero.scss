@@ -5,7 +5,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('/images/sectionheroimages/section_hero_mobile.jpg');
+    url(../images/sectionheroimages/section_hero_mobile.jpg);
   background-repeat: no-repeat;
   height: 400px;
   margin: auto;
@@ -57,7 +57,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('/images/sectionheroimages/section_hero_mobile@2x.jpg');
+      url(../images/sectionheroimages/section_hero_mobile@2x.jpg);
   }
 }
 
@@ -71,7 +71,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('/images/sectionheroimages/section_hero_tablet.jpg');
+      url(../images/sectionheroimages/section_hero_tablet.jpg);
   }
 }
 
@@ -83,7 +83,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('/images/sectionheroimages/section_hero_tablet@2x.jpg');
+      url(../images/sectionheroimages/section_hero_tablet@2x.jpg);
   }
 }
 /*==DESKTOP==*/
@@ -94,14 +94,12 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('/images/sectionheroimages/section_hero_desktop.jpg');
+      url(../images/sectionheroimages/section_hero_desktop.jpg);
     background-repeat: no-repeat;
     height: 600px;
     max-width: 1600px;
-    
 
     &__title {
-
       font-size: 44px;
       line-height: 1.364;
       letter-spacing: 0.06em;
@@ -119,6 +117,6 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('/images/sectionheroimages/section_hero_desktop@2x.jpg');
+      url(../images/sectionheroimages/section_hero_desktop@2x.jpg);
   }
 }
