@@ -1,13 +1,14 @@
 .section-our-team {
-  min-width: 480px;
+  width: 100%;
   display: flex;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  margin: 0 auto;
 
   &--bgc {
     background-color: $darkWhite;
-    min-width: 480px;
+    min-width: 100%;
+    margin: 0 auto;
   }
 
   &__title {

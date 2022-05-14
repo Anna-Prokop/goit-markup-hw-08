@@ -50,6 +50,15 @@ img {
 }
 
 /*===MOBILE==*/
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 320px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
@@ -79,13 +88,12 @@ img {
 
 /*==MOBILE==*/
 .header {
-  min-width: 480px;
-  max-width: 767px;
+  width: 100%;
   border-bottom: 1px solid #ececec;
   display: flex;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  margin: 0 auto;
 }
 
 .header-container {
@@ -345,12 +353,11 @@ img {
 }
 
 .section-hero {
-  min-width: 480px;
-  max-width: 767px;
+  width: 100%;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/sectionheroimages/section_hero_mobile.jpg);
   background-repeat: no-repeat;
   height: 400px;
-  margin: auto;
+  margin: 0 auto;
   background-size: cover;
 }
 
@@ -697,11 +704,11 @@ img {
 }
 
 .lorem-ipsum-container {
-  min-width: 480px;
+  width: 100%;
   display: flex;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  margin: 0 auto;
 }
 
 .lorem-ipsum {
@@ -866,16 +873,17 @@ img {
 }
 
 .section-our-team {
-  min-width: 480px;
+  width: 100%;
   display: flex;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  margin: 0 auto;
 }
 
 .section-our-team--bgc {
   background-color: #f5f4fa;
-  min-width: 480px;
+  min-width: 100%;
+  margin: 0 auto;
 }
 
 .section-our-team__title {
@@ -1026,11 +1034,11 @@ img {
 }
 
 .section-our-clients {
-  min-width: 320px;
+  width: 100%;
   display: flex;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  margin: 0 auto;
 }
 
 .section-our-clients__title {
@@ -1133,7 +1141,8 @@ img {
 
 @media screen and (max-width: 767px) {
   .portfolio-button {
-    min-width: 480px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1495,11 +1504,11 @@ img {
 /*===MOBILE===*/
 @media screen and (max-width: 767px) {
   .contact {
-    min-width: 480px;
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    margin: 0 auto;
   }
   .contact--bgc {
     background-color: #2f303a;
@@ -1547,7 +1556,7 @@ img {
     color: #2196f3;
   }
   .footer-container {
-    width: 480px;
+    width: 100%;
     display: flex;
     align-items: center;
     align-content: center;
