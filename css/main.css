@@ -50,6 +50,15 @@ img {
 }
 
 /*===MOBILE==*/
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 320px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
@@ -79,8 +88,7 @@ img {
 
 /*==MOBILE==*/
 .header {
-  min-width: 480px;
-  max-width: 767px;
+  width: 100%;
   border-bottom: 1px solid #ececec;
   display: flex;
   justify-content: center;
@@ -345,8 +353,7 @@ img {
 }
 
 .section-hero {
-  min-width: 480px;
-  max-width: 767px;
+  width: 100%;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/sectionheroimages/section_hero_mobile.jpg);
   background-repeat: no-repeat;
   height: 400px;
@@ -697,7 +704,7 @@ img {
 }
 
 .lorem-ipsum-container {
-  min-width: 480px;
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-left: auto;
@@ -866,7 +873,7 @@ img {
 }
 
 .section-our-team {
-  min-width: 480px;
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-left: auto;
@@ -875,7 +882,7 @@ img {
 
 .section-our-team--bgc {
   background-color: #f5f4fa;
-  min-width: 480px;
+  width: 100%;
 }
 
 .section-our-team__title {
@@ -1026,7 +1033,7 @@ img {
 }
 
 .section-our-clients {
-  min-width: 320px;
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-left: auto;
@@ -1495,7 +1502,7 @@ img {
 /*===MOBILE===*/
 @media screen and (max-width: 767px) {
   .contact {
-    min-width: 480px;
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-left: auto;
