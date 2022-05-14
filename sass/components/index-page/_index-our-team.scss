@@ -1,5 +1,5 @@
 .section-our-team {
-width: 100%;
+  min-width: 480px;
   display: flex;
   justify-content: center;
   margin-left: auto;
@@ -7,7 +7,7 @@ width: 100%;
 
   &--bgc {
     background-color: $darkWhite;
-   width: 100%;
+    min-width: 480px;
   }
 
   &__title {
