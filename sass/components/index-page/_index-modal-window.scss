@@ -23,7 +23,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
+  min-width:300px;
+  max-width: 450px;
   min-height: 609px;
   background-color: $white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -89,7 +90,7 @@
 .modal-form {
   margin-left: 40px;
   margin-right: 40px;
-  width: 370px;
+  max-width: 370px;
   height: 342px;
 
   &__label-style {
@@ -127,7 +128,8 @@
   }
 
   &__textarea {
-    width: 370px;
+    min-width:320px;
+    max-width: 370px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -183,6 +185,7 @@
 
   &__button-container {
     display: flex;
+  
   }
 
   &__form-button {
@@ -200,7 +203,10 @@
     text-align: center;
     letter-spacing: 0.06em;
     border: none;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
+ 
+   
   }
 
   &__input:focus + &__input-icon {
@@ -219,6 +225,7 @@
 .modal-form__form-button {
   color: $white;
   background-color: $mainBlue;
+  margin-bottom: 30px;
 }
 
 /*==TABLET==*/

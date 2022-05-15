@@ -29,7 +29,7 @@
   align-items: center;
 
   &__photo {
-    width: 450px;
+  width: 320px;
     height: 460px;
   }
 
@@ -41,6 +41,8 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
   }
 
   &__name {
@@ -166,6 +168,8 @@
 
     &__item {
       width: 270px;
+      margin-right: 0;
+      margin-left: 0;
     }
 
 
