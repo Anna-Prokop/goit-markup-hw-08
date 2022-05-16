@@ -1204,14 +1204,12 @@ img {
 
 @media screen and (max-width: 767px) {
   .portfolio-button {
-    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 5px;
   }
   .portfolio-button__item {
     width: 128px;
@@ -1262,7 +1260,6 @@ img {
   }
   .portfolio-list__item {
     width: 310px;
-    max-width: 450px;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
